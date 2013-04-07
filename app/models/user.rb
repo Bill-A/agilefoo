@@ -10,7 +10,6 @@ class User < ActiveRecord::Base
 
   validates :username, :length => { :minimum => 3 }
   validates_uniqueness_of :username
-  # validates :username, :uniqueness
   
   validate :password_complexity
  
