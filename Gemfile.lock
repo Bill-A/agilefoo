@@ -77,6 +77,9 @@ GEM
     faraday (0.8.4)
       multipart-post (~> 1.1)
     ffi (1.4.0)
+    figaro (0.6.3)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     gherkin (2.11.6)
       json (>= 1.7.6)
     hike (1.2.1)
@@ -189,6 +192,7 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_girl_rails
+  figaro
   jquery-rails
   launchy
   newrelic_rpm

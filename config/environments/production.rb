@@ -78,7 +78,7 @@ CourseProject::Application.configure do
       :domain => "gmail.com",
       :enable_starttls_auto => true,
       :authentication => :login,
-      :user_name => "agilefoo@gmail.com",
-      :password => "agile!foo"
+      :user_name => ENV["GMAIL_USERNAME_PROD"],
+      :password => ENV["GMAIL_PASSWORD_PROD"]
   }
 end

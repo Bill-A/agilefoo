@@ -48,8 +48,8 @@ CourseProject::Application.configure do
       :domain => "gmail.com",
       :enable_starttls_auto => true,
       :authentication => :login,
-      :user_name => "BillAllenEmail@gmail.com",
-      :password => "goodWC!9"
+      :user_name => ENV["GMAIL_USERNAME_DEV"],
+      :password => ENV["GMAIL_PASSWORD_DEV"]
   }
 
 end

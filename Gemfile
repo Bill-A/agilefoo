@@ -5,6 +5,7 @@ gem 'bootstrap-sass'
 gem 'twitter'
 gem 'newrelic_rpm'
 gem 'jquery-rails'
+gem 'figaro'
 
 # For user authentication
 gem 'bcrypt-ruby'
