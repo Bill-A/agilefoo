@@ -8,6 +8,6 @@
 
 4/1/13   Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.
 
-4/8/13   Prevent timeline data lookup for an invalid Twitter name, it causes an exception.
+4/8/13   Catch exception caused by timeline data lookup for an invalid Twitter name.
 
-4/10/13  Added use of Environment Variables for userid and password.
+4/10/13  Add use of Environment Variables.

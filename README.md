@@ -1,4 +1,4 @@
-== Getting Started
+# Getting Started
 
 agileFoo has several goals: It is a place to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And it is a place to discuss and learn the 'values', 'principles' and 'practices' of agile software development.
 
@@ -8,7 +8,7 @@ Perhaps your goal is to explore and learn agile development and agile testing. I
 
 And ideally use the discussion board to share your progress and discoveries.
 
-== agileFoo
+# agileFoo
 
 Agile, an umbrella term for a collection of software methodologies with the pattern: iterative development and incremental delivery with customer involvement.
 
@@ -22,23 +22,23 @@ Email:  agileFoo AT gmail DOT com
 
 Bill Allen
 
-agile Coach
-agile Instructor
+agile Coach   
+agile Instructor   
 Software Developer
 
-== Goals
+## Goals
 
 1. Save and share links about agile; allow commenting on links.
 2. Ability to start discussions about agile and allow replies
 3. Facility for studying and understanding TDD, BDD/ATDD, ET
 
 
-== User Stories
+## User Stories
 
 Feature: new users can register 
 
-In order to gain access to the site
-As a new user to AgileFoo
+In order to gain access to the site   
+As a new user to AgileFoo    
 I want to register with my details
 
 
@@ -52,14 +52,14 @@ When I submit registration details with incorrect password confirmation
 
 Then I land on the New User Registration page with the message 'Password doesn't match confirmation'
 
-Other scenarios:
-attempted registration with invalid username
-attempted registration with invalid email address
-password doesn't match confirmation password
-insecure passwords 
-successful registration with secure password
+Other scenarios:  
+attempted registration with invalid usernamev  
+attempted registration with invalid email address  
+password doesn't match confirmation password  
+insecure passwords  
+successful registration with secure password  
 
-_______________________________________________________________
+- - -
 
 
 Feature: A user can log into agileFoo 
@@ -94,7 +94,7 @@ After adding a comment the user is returned to the Links page and the comment co
 A logged in user visits the Posts page, clicks the comments link under a user submitted link, there they can add a comment to that link. 
 Acceptance Criteria
 Other users can view that comment message by visiting the link's show page."
-_______________________________________________________________
+- - -
 
 Feature: A logged in user can view their profile 
 
@@ -104,7 +104,7 @@ When the user clicks ‘Add a Post’
 Then they land on the posts where they can enter a post consisting of a title and a url
 
 A logged in user can view their profile consisting of posts, comments, discussions, replies and tweets.
-_______________________________________________________________
+- - -
 
 Feature: A logged in user can vote on a post 
 
