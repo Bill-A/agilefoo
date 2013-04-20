@@ -14,52 +14,52 @@ Agile, an umbrella term for a collection of software methodologies with the patt
 
 "Foo" (pronounced FOO), a universal term often used by programmers as a substitute for something real when discussing ideas or presenting examples. 
 
-agileFoo, a site to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And here you can discuss the 'values', 'principles' and 'practices' of agile software development.
+agileFoo, a site to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And here you can discuss the 'values', 'principles' and 'practices' of agile software development.   
 
-Freely contact me for question, clarifications or just to chat:
+### Questions & Support
 
-Email:  agileFoo AT gmail DOT com
+If you have any questions, bugs, or suggestions, please report them via Github Issues. Or, come chat with me anytime: agileFoo AT gmail DOT com. I'd love to hear your feedback and ideas! Freely contact me for question, clarifications or just to chat.   
 
-Bill Allen
+Bill Allen   
 
 agile Coach   
 agile Instructor   
-Software Developer
+Software Developer   
 
-### Goals
+### Contributing
 
-1. Save and share links; allow commenting on links.
-2. Ability to start discussions and allow replies
-3. Facility for studying and understanding TDD, BDD/ATDD and ET
+agileFoo is an open source project and I welcome your contributions. Fire away with issues and pull requests!
 
-
-### User Stories
+### User Stories   
 
 - - -
 
-`Feature: new users can register   `
+```ruby
+Feature: new users can register   
 
-`In order to gain access to the site   `
-`As a new user to AgileFoo    `
-`I want to register with my details   `
+In order to gain access to the site   
+As a new user to AgileFoo    
+I want to register with my details   
 
-`Notes: secure passwords must consist of string of at least 8 characters with at least one letter, one number and one symbol   `
+Notes: secure passwords must consist of string of at least 8 characters with at least one letter, one number and one symbol   
 
-`Scenario: New user registration where password doesn't match confirmation password   `
+Scenario: New user registration where password doesn't match confirmation password   
 
-`Given I am on the New User Registration page of AgileFoo   `
-`When I submit registration details with incorrect password confirmation   `
-`Then I land on the New User Registration page with the message 'Password doesn't match confirmation'   `
+Given I am on the New User Registration page of AgileFoo   
+When I submit registration details with incorrect password confirmation   
+Then I land on the New User Registration page with the message 'Password doesn't match confirmation'   
 
 Other registration scenarios to consider:  
 Invalid username  
 Invalid email address   
 Insecure passwords  
 Successful registration with secure password  
+```
 
 - - -
 
-`Feature: A user can log into agileFoo `
+```ruby
+Feature: A user can log into agileFoo 
 
 In order to ...   
 As a ...    
@@ -69,11 +69,13 @@ Scenario: A registered user can log into agileFoo
 
 Given that a registered user is on the ‘Log in’ page  
 When the user fills out the Log in form with a valid user name and password and clicks on ‘Log in’   
-`Then they land on the agileFoo main page with the message ‘Logged in successfully.’  `
+Then they land on the agileFoo main page with the message ‘Logged in successfully.’  
+```
 
 - - -
 
-`Feature: A logged in user can post a link   `
+```ruby
+Feature: A logged in user can post a link   
 
 In order to ...   
 As a ...    
@@ -83,11 +85,13 @@ Scenario: Logged in user can post links
 
 Given that a logged in user is on the ‘Links’ page  
 When the user clicks ‘Add a Post’    
-`Then they land on the posts where they can enter a post consisting of a title and a url  `
+Then they land on the posts where they can enter a post consisting of a title and a url  
+```
 
 - - -
 
-`Feature: A logged in user can vote on post   `
+```ruby
+Feature: A logged in user can vote on post   
 
 In order to ...   
 As a ...    
@@ -103,7 +107,8 @@ Scenario: A logged in user visits the Posts page, sees a user submitted link and
 
 Given that a logged in user is on the ‘Links’ page  
 When the user clicks ‘Vote Down’    
-`Then they should remain on the Posts page and the vote count should change down    `
+Then they should remain on the Posts page and the vote count should change down    
+```
 
 - - -
 (edit here)   
