@@ -1,10 +1,10 @@
 # What and Why?   
 
-agileFoo has several goals: It is a place to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And it is a place to discuss and learn the 'values', 'principles' and 'practices' of agile software development.
+agileFoo is an open source RoR project to fulfill several goals:   
 
-agileFoo is an open source RoR project and is available to anyone, whether your need is a simple 'link saver' or discussion forum.
+To explore and learn agile development and agile testing. To do so, then download the code. Explore, Learn and share. There are numerous opportunities to enhance this project with new features. So, write some user stories, write some tests and then write some code. After all, this is a lab to explore and learn testing: TDD, BDD, ATDD and Exploratory Testing. The exploration and learning will center upon tests written in Rspec (see the spec | features directory), Cucumber (see the features directory) and Capybara.   
 
-Perhaps your goal is to explore and learn agile development and agile testing. If so, then download the code. Explore, Learn and share. There are numerous opportunities to enhance this project with new features. So, write some user stories, write some tests and then write some code. After all, this is a lab to explore and learn testing: TDD, BDD, ATDD and Exploratory Testing. The exploration and learning will center upon tests written in Rspec (see the spec | features directory), Cucumber (see the features directory) and Capybara.
+And it serves as an utility app to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And ... it is a place to discuss the 'values', 'principles' and 'practices' of agile software development.
 
 And ideally use the discussion board to share your progress and discoveries.
 
@@ -28,8 +28,8 @@ Software Developer
 
 ### Goals
 
-1. Save and share links about agile; allow commenting on links.
-2. Ability to start discussions about agile and allow replies
+1. Save and share links; allow commenting on links.
+2. Ability to start discussions and allow replies
 3. Facility for studying and understanding TDD, BDD/ATDD and ET
 
 
@@ -44,16 +44,15 @@ I want to register with my details
 
 Notes: secure passwords must consist of string of at least 8 characters with at least one letter, one number and one symbol
 
-Scenario: new user registration where password doesn't match confirmation password
+Scenario: New user registration where password doesn't match confirmation password
 
-Given I am on the New User Registration page of AgileFoo
+Given I am on the New User Registration page of AgileFoo   
 When I submit registration details with incorrect password confirmation
 Then I land on the New User Registration page with the message 'Password doesn't match confirmation'
 
 Other registration scenarios to consider:  
 Invalid username  
-Invalid email address  
-Password doesn't match confirmation password  
+Invalid email address   
 Insecure passwords  
 Successful registration with secure password  
 
@@ -148,3 +147,19 @@ The user should end up on the home page and the vote count should change up or d
 "A logged in user that votes for a link cannot vote for the same link in the same direction.   
 Acceptance Criteria  
 A logged in user can see that which links they have voted for and in which direction up/down"  
+
+- - -
+
+### Change Log
+
+0.99  
+•     Main and About pages are more descriptive towards apps purpose.   
+0.98  
+•     Add use of Environment Variables.   
+•     Catch exception caused by timeline data lookup for an invalid Twitter name.   
+•     Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.   
+•     Fixed broken link on 'About | Bill Allen'.   
+•     Prevent attempt to register a new email with an existing userid from causing an error.   
+•     Included lots of Cucumber and Rspec testing around the new user registration feature.   
+• 
+•
