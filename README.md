@@ -140,13 +140,13 @@ Acceptance Criteria
 
 An up vote count should increase the count, A down vote should decrease the count. A user cannot apply multiple up or down votes to a post.   
 
-"A logged in user visits the home page, sees a user submitted link and votes on it.  
+A logged in user visits the home page, sees a user submitted link and votes on it.  
 Acceptance Criteria  
-The user should end up on the home page and the vote count should change up or down according to how they voted"  
+The user should end up on the home page and the vote count should change up or down according to how they voted   
 
-"A logged in user that votes for a link cannot vote for the same link in the same direction.   
+A logged in user that votes for a link cannot vote for the same link in the same direction.   
 Acceptance Criteria  
-A logged in user can see that which links they have voted for and in which direction up/down"  
+A logged in user can see that which links they have voted for and in which direction up/down   
 
 - - -
 
