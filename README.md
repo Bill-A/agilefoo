@@ -34,86 +34,82 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 
 - - -
 
-```ruby
-Feature: new users can register   
 
-In order to gain access to the site   
-As a new user to AgileFoo    
-I want to register with my details   
+    Feature: new users can register   
 
-Notes: secure passwords must consist of string of at least 8 characters with at least one letter, one number and one symbol   
+    In order to gain access to the site   
+    As a new user to AgileFoo    
+    I want to register with my details   
 
-Scenario: New user registration where password doesn't match confirmation password   
+    Notes: secure passwords must consist of string of at least 8 characters with at least one letter, one number and one symbol   
 
-Given I am on the New User Registration page of AgileFoo   
-When I submit registration details with incorrect password confirmation   
-Then I land on the New User Registration page with the message 'Password doesn't match confirmation'   
+    Scenario: New user registration where password doesn't match confirmation password   
 
-Other registration scenarios to consider:  
-Invalid username  
-Invalid email address   
-Insecure passwords  
-Successful registration with secure password  
-```
+    Given I am on the New User Registration page of AgileFoo   
+    When I submit registration details with incorrect password confirmation   
+    Then I land on the New User Registration page with the message 'Password doesn't match confirmation'   
 
-- - -
-
-```ruby
-Feature: A user can log into agileFoo 
-
-In order to ...   
-As a ...    
-I want to ...
-
-Scenario: A registered user can log into agileFoo  
-
-Given that a registered user is on the ‘Log in’ page  
-When the user fills out the Log in form with a valid user name and password and clicks on ‘Log in’   
-Then they land on the agileFoo main page with the message ‘Logged in successfully.’  
-```
+    Other registration scenarios to consider:  
+    Invalid username  
+    Invalid email address   
+    Insecure passwords  
+    Successful registration with secure password  
 
 - - -
 
-```ruby
-Feature: A logged in user can post a link   
+    Feature: A user can log into agileFoo 
 
-In order to ...   
-As a ...    
-I want to ...
+    In order to ...   
+    As a ...    
+    I want to ...
 
-Scenario: Logged in user can post links   
+    Scenario: A registered user can log into agileFoo  
 
-Given that a logged in user is on the ‘Links’ page  
-When the user clicks ‘Add a Post’    
-Then they land on the posts where they can enter a post consisting of a title and a url  
-```
+    Given that a registered user is on the ‘Log in’ page  
+    When the user fills out the Log in form with a valid user name and password and clicks on ‘Log in’   
+    Then they land on the agileFoo main page with the message ‘Logged in successfully.’  
 
 - - -
 
-```ruby
-Feature: A logged in user can vote on post   
+    Feature: A logged in user can post a link   
 
-In order to ...   
-As a ...    
-I want to ...
+    In order to ...   
+    As a ...    
+    I want to ...
 
-Scenario: A logged in user visits the Posts page, sees a user submitted link and votes up on it.  
+    Scenario: Logged in user can post links   
 
-Given that a logged in user is on the ‘Links’ page  
-When the user clicks ‘Vote Up’    
-Then they should remain on the Posts page and the vote count should change up    
-
-Scenario: A logged in user visits the Posts page, sees a user submitted link and votes down on it.  
-
-Given that a logged in user is on the ‘Links’ page  
-When the user clicks ‘Vote Down’    
-Then they should remain on the Posts page and the vote count should change down    
-```
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘Add a Post’    
+    Then they land on the posts where they can enter a post consisting of a title and a url  
 
 - - -
-(edit here)   
+
+    Feature: A logged in user can vote on post   
+
+    In order to ...   
+    As a ...    
+    I want to ...
+
+    Scenario: A logged in user visits the Posts page, sees a user submitted link and votes up on it.  
+
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘Vote Up’    
+    Then they should remain on the Posts page and the vote count should change up    
+
+    Scenario: A logged in user visits the Posts page, sees a user submitted link and votes down on it.  
+
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘Vote Down’    
+    Then they should remain on the Posts page and the vote count should change down    
+
+- - -
 
     Feature: A logged in user can comment on a post.  
+
+    In order to create community on the site   
+    As a logged in user to AgileFoo    
+    I want to comment on Posts 
 
     Scenario: A logged in user visits the Posts page, clicks the comments link under a user submitted link, then they can add a comment to that link.   
 
@@ -125,6 +121,7 @@ Then they should remain on the Posts page and the vote count should change down
 
 - - -
 
+(clean up these last two stories)  
 Feature: A logged in user can view their profile   
 
 Scenario: Logged in user can post links   
@@ -160,12 +157,13 @@ A logged in user can see that which links they have voted for and in which direc
 
 ### Change Log
 
-0.99  
-*   Main and About pages are more descriptive towards apps purpose.   
-0.98  
-*   Add use of Environment Variables.   
-*   Catch exception caused by timeline data lookup for an invalid Twitter name.   
-*   Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.   
-*   Fixed broken link on 'About | Bill Allen'.   
-*   Prevent attempt to register a new email with an existing userid from causing an error.   
-*   Included lots of Cucumber and Rspec testing around the new user registration feature.   
+#### 0.99  
+* Main and About pages are more descriptive towards apps purpose.   
+
+#### 0.98  
+* Add use of Environment Variables.   
+* Catch exception caused by timeline data lookup for an invalid Twitter name.   
+* Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.   
+* Fixed broken link on 'About | Bill Allen'.   
+* Prevent attempt to register a new email with an existing userid from causing an error.   
+* Included lots of Cucumber and Rspec testing around the new user registration feature.   
