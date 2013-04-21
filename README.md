@@ -2,7 +2,7 @@
 
 agileFoo is an open source RoR project to fulfill several goals:   
 
-To explore and learn agile development and agile testing. To do so, then download the code. Explore, Learn and share. There are numerous opportunities to enhance this project with new features. So, write some user stories, write some tests and then write some code. After all, this is a lab to explore and learn testing: TDD, BDD, ATDD and Exploratory Testing. The exploration and learning will center upon tests written in Rspec (see the spec | features directory), Cucumber (see the features directory) and Capybara.   
+To explore and learn agile development and agile testing. To do so, download the code. Explore, Learn and share. There are numerous opportunities to enhance this project with new features. So, write some user stories, write some tests and then write some code. After all, this is a lab to explore and learn testing: TDD, BDD, ATDD and Exploratory Testing. The exploration and learning will center upon tests written in Rspec (see the spec | features directory), Cucumber (see the features directory) and Capybara.   
 
 And it serves as an utility app to save and share links, much like bit.ly (bitmarks) or reddit, but agile related. And ... it is a place to discuss the 'values', 'principles' and 'practices' of agile software development.
 
@@ -113,14 +113,16 @@ Then they should remain on the Posts page and the vote count should change down
 - - -
 (edit here)   
 
-Feature: A logged in user can comment on a post.  
-Acceptance Criteria  
-User sees a list of submitted links.  
-After adding a comment the user is returned to the Links page and the comment count for that link should be increased by one.   
+    Feature: A logged in user can comment on a post.  
 
-A logged in user visits the Posts page, clicks the comments link under a user submitted link, there they can add a comment to that link.   
-Acceptance Criteria  
-Other users can view that comment message by visiting the link's show page."  
+    Scenario: A logged in user visits the Posts page, clicks the comments link under a user submitted link, then they can add a comment to that link.   
+
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘comments’     
+    And they should land on the Comments page     
+    And they fill in a comment and clicks "Add a comment'    
+    Then they should land on the Links page and the comments count should increase by one   
+
 - - -
 
 Feature: A logged in user can view their profile   
@@ -159,11 +161,11 @@ A logged in user can see that which links they have voted for and in which direc
 ### Change Log
 
 0.99  
-•     Main and About pages are more descriptive towards apps purpose.   
+*   Main and About pages are more descriptive towards apps purpose.   
 0.98  
-•     Add use of Environment Variables.   
-•     Catch exception caused by timeline data lookup for an invalid Twitter name.   
-•     Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.   
-•     Fixed broken link on 'About | Bill Allen'.   
-•     Prevent attempt to register a new email with an existing userid from causing an error.   
-•     Included lots of Cucumber and Rspec testing around the new user registration feature.   
+*   Add use of Environment Variables.   
+*   Catch exception caused by timeline data lookup for an invalid Twitter name.   
+*   Enabled case insensitivity on username. Modified existing users table to downcase all existing usernames.   
+*   Fixed broken link on 'About | Bill Allen'.   
+*   Prevent attempt to register a new email with an existing userid from causing an error.   
+*   Included lots of Cucumber and Rspec testing around the new user registration feature.   
