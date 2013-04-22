@@ -125,8 +125,8 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 - - -
 
 (clean up these last two stories)  
-    Feature: A logged in user can view their profile   
 
+    Feature: A logged in user can view their profile   
 
     In order to ...   
     As a ...    
@@ -141,7 +141,6 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 - - -
 
     Feature: A logged in user can vote on a post   
-
 
     In order to ...   
     As a ...    
@@ -158,6 +157,7 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 ### Change Log
 
 #### 0.99  
+* README has more information about agileFoo.   
 * Main and About pages are more descriptive towards apps purpose.   
 
 #### 0.98  
