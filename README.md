@@ -34,7 +34,6 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 
 - - -
 
-
     Feature: new users can register   
 
     In order to gain access to the site   
@@ -101,7 +100,11 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 
     Given that a logged in user is on the ‘Links’ page  
     When the user clicks ‘Vote Down’    
-    Then they should remain on the Posts page and the vote count should change down    
+    Then they should remain on the Posts page and the vote count should change down  
+
+    Scenario: A logged in user that votes for a Post cannot vote for the same Post in the same direction.   
+    Acceptance Criteria  
+    A logged in user can see a links they have voted for and in which direction up/down   
 
 - - -
 
@@ -122,36 +125,33 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 - - -
 
 (clean up these last two stories)  
-Feature: A logged in user can view their profile   
+    Feature: A logged in user can view their profile   
 
-Scenario: Logged in user can post links   
-Given that a logged in user is on the ‘Links’ page  
-When the user clicks ‘Add a Post’    
-Then they land on the posts where they can enter a post consisting of a title and a url  
 
-A logged in user can view their profile consisting of posts, comments, discussions, replies and tweets.  
+    In order to ...   
+    As a ...    
+    I want to ...
+
+    Scenario: Logged in user can post links   
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘Add a Post’    
+    Then they land on the posts where they can enter a post consisting of a title and a url  
+
+    A logged in user can view their profile consisting of posts, comments, discussions, replies and tweets.  
 - - -
 
-Feature: A logged in user can vote on a post   
+    Feature: A logged in user can vote on a post   
 
-Scenario: Logged in user can post links   
 
-Given that a logged in user is on the ‘Links’ page  
-When the user clicks ‘Add a Post’    
-Then they land on the posts where they can enter a post consisting of a title and a url  
+    In order to ...   
+    As a ...    
+    I want to ...
 
-A logged in user can vote a Post up or down.  
-Acceptance Criteria  
+    Scenario: Logged in user can post links   
 
-An up vote count should increase the count, A down vote should decrease the count. A user cannot apply multiple up or down votes to a post.   
-
-A logged in user visits the home page, sees a user submitted link and votes on it.  
-Acceptance Criteria  
-The user should end up on the home page and the vote count should change up or down according to how they voted   
-
-A logged in user that votes for a link cannot vote for the same link in the same direction.   
-Acceptance Criteria  
-A logged in user can see that which links they have voted for and in which direction up/down   
+    Given that a logged in user is on the ‘Links’ page  
+    When the user clicks ‘Add a Post’    
+    Then they land on the posts where they can enter a post consisting of a title and a url  
 
 - - -
 
