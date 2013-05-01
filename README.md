@@ -58,9 +58,9 @@ agileFoo is an open source project and I welcome your contributions. Fire away w
 
     Feature: A user can log into agileFoo 
 
-    In order to ...   
-    As a ...    
-    I want to ...
+    In order to use secured features   
+    As a registered user    
+    I want to want to login with my details
 
     Scenario: A registered user can log into agileFoo  
 

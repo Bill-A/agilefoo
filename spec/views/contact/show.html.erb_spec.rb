@@ -1,9 +1,8 @@
 require 'spec_helper' 
 
 describe "contact/show.html.erb" do
-	it "displays the Contact page" do
-		# assign(:contact, double("Contact", :text => "Bill Allen"))
-		render
-		rendered.should contain("Contact Info")
+	it "contains 'Contact Info' " do
+    visit (contact/show.html.erb)
+    page.should have_content('Contact Info')
 	end
 end

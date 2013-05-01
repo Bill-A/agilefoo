@@ -27,10 +27,10 @@ class User < ActiveRecord::Base
 
   def password_complexity
     if password.present? and not password.match(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[-+=_!@#$&*.,?]).{8,128}/)
-      errors.add :password, "must consist of at least 8 characters with at least one letter, one number and one symbol: -+=_!@#$&*.,?"
+      errors.add :password,
+                 "must consist of at least 8 characters with at least one letter, one number and one symbol: -+=_!@#$&*.,?"
     end
   end
-
 
 	has_many :posts, :dependent => :destroy
 	has_many :comments, :dependent => :destroy
