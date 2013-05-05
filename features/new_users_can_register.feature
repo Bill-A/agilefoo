@@ -14,10 +14,10 @@ Notes: secure passwords must consist of string of at least 8 characters
 		Then I should see "<message>"
 		Scenarios: attempted registration with invalid username
 		  | email_address       | username   | password  | password_confirmation | landing_page          | message                                                                                            |  
-		  | test@govirtual.com  | me         | gr8Zeus+  | gr8Zeus+              | New User Registration | Username is too short (minimum is 3 characters)                                                    |  
+		  | test@govirtual.com  | mememememe         | gr8Zeus+  | gr8Zeus+              | New User Registration | Username is too short (minimum is 3 characters)                                                    |
 		Scenarios: attempted registration with invalid email address
 		  | email_address       | username   | password  | password_confirmation | landing_page          | message                                                                                            |  
-		  | test@govirtual      | gooduser   | gr8Zeus0  | gr8Zeus0              | New User Registration | Email is invalid                                                                                   |  
+		  | test@govirtual.com      | gooduser   | gr8Zeus0  | gr8Zeus0              | New User Registration | Email is invalid                                                                                   |
 		Scenarios: password doesn't match confirmation password
 		  | email_address       | username   | password  | password_confirmation | landing_page          | message                                                                                            |  
 		  | test@govirtual.com  | gooduser   | gr8Zeus!  | gr8Zeus+              | New User Registration | Password doesn't match confirmation                                                                |  
