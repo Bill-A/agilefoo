@@ -16,7 +16,7 @@ describe PostsController do
 
 		it "should display the correct title" do
 			get 'index'
-			response.should have_selector("title", :content => "Agile Box")
+			response.should have_selector("title", :content => "agileFoo")
 		end		
 	end
 

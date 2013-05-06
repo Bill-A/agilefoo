@@ -7,12 +7,10 @@ FactoryGirl.define do
 	end
 end
 
-# FactoryGirl.define do
-# 	factory :user_records do 
-# 		email_address "newuser@tester.com"
-# 		username "newuser"
-# 		password "secret08!"
-# 		password_confirmation { |u| u.password }
-# 		message "some status"
-# 	end	
-# end
+
+FactoryGirl.define do
+  factory :post do |f|
+    f.title "a really great article to read"
+  end
+end
+

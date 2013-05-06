@@ -1,4 +1,5 @@
-# What and Why?   
+[ ![Codeship Status for Bill-A/agilefoo](https://www.codeship.io/projects/28d54e10-8c14-0130-e930-22000a1d0214/status?branch=master)](https://www.codeship.io/projects/2769)
+# What and Why?
 
 agileFoo is an open source RoR project to fulfill several goals:   
 
